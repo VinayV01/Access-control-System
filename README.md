@@ -1,5 +1,4 @@
 # Access Control & Permission Management System  
-**MERN Stack Assignment**
 
 ## Project Overview
 
