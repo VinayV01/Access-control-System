@@ -150,3 +150,15 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 CORS_ALLOW_CREDENTIALS = True
+
+import os
+
+SECRET_KEY = os.environ.get("SECRET_KEY")
+
+DEBUG = os.environ.get("DEBUG", "false") == "true"
+
+ALLOWED_HOSTS = ["*"]
+
+CORS_ALLOWED_ORIGINS = os.environ.get(
+    "ALLOWED_ORIGINS", ""
+).split(",")
